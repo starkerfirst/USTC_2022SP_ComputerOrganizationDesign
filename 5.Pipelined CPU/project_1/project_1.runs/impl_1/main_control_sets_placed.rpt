@@ -1,0 +1,119 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun May  8 00:34:40 2022
+| Host         : DESKTOP-8OP9CVU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    41 |
+|    Minimum number of control sets                        |    41 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    26 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    41 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    37 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            7 |
+| No           | No                    | Yes                    |             314 |          141 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1112 |          603 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |                                           Enable Signal                                           | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | cpu/EX/ready_r0_out                                                                               | rst_IBUF         |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | cpu/EX/sum_reg_reg[3]_0[0]                                                                        | rst_IBUF         |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG | pdu/cnt_m_rf[4]_i_1_n_0                                                                           | rst_IBUF         |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG |                                                                                                   |                  |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG |                                                                                                   | rst_IBUF         |                9 |             28 |         3.11 |
+|  clk_IBUF_BUFG | cpu/EX/E[0]                                                                                       | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_12[0]                                                                  | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_2[0]                                                                   | rst_IBUF         |               20 |             32 |         1.60 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_1[0]                                                                   | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_10[0]                                                                  | rst_IBUF         |               26 |             32 |         1.23 |
+|  clk_cpu_BUFG  | cpu/MEM/E[0]                                                                                      | rst_IBUF         |               24 |             32 |         1.33 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_10[0]                                                                  | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_11[0]                                                                  | rst_IBUF         |               22 |             32 |         1.45 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_12[0]                                                                  | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_2[0]                                                                   | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_3[0]                                                                   | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_1[0]                                                                   | rst_IBUF         |               25 |             32 |         1.28 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_4[0]                                                                   | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_5[0]                                                                   | rst_IBUF         |               22 |             32 |         1.45 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_6[0]                                                                   | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_7[0]                                                                   | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_0[0]                                                                   | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_8[0]                                                                   | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[1]_1[0]                                                                   | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[1]_2[0]                                                                   | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[1]_0[0]                                                                   | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[1]_3[0]                                                                   | rst_IBUF         |               11 |             32 |         2.91 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[0]_9[0]                                                                   | rst_IBUF         |               22 |             32 |         1.45 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_5[0]                                                                   | rst_IBUF         |               20 |             32 |         1.60 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_7[0]                                                                   | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_13[0]                                                                  | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_9[0]                                                                   | rst_IBUF         |               21 |             32 |         1.52 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_11[0]                                                                  | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_6[0]                                                                   | rst_IBUF         |               21 |             32 |         1.52 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_4[0]                                                                   | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_8[0]                                                                   | rst_IBUF         |               23 |             32 |         1.39 |
+|  clk_cpu_BUFG  | cpu/MEM/wb_addr_reg_reg[4]_3[0]                                                                   | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_cpu_BUFG  | cpu/ID/p_0_out                                                                                    | rst_IBUF         |               23 |             72 |         3.13 |
+|  clk_cpu_BUFG  | cpu/MEM/date_mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                  |               32 |            128 |         4.00 |
+|  clk_cpu_BUFG  | cpu/MEM/date_mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                  |               32 |            128 |         4.00 |
+|  clk_cpu_BUFG  |                                                                                                   | rst_IBUF         |              132 |            286 |         2.17 |
++----------------+---------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,12 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1647963159,verilog,,C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,,blk_mem_gen_0,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1648024488,verilog,,C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sim_1/new/RAMsim.v,,dist_mem_gen_0,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sim_1/new/FIFOsim.v,1648304989,verilog,,,,FIFOsim,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sim_1/new/RAMsim.v,1648024955,verilog,,,,RAMsim,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sim_1/new/RFsim.v,1647959196,verilog,,,,RFsim,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sources_1/new/FIFO.v,1648360435,verilog,,C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sources_1/new/rf.v,,FIFO;LCU;SDU;clk_div;signal_edge,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sources_1/new/rf.v,1647957612,verilog,,C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sim_1/new/FIFOsim.v,,rf,,,,,,,,

@@ -1,0 +1,116 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Thu Apr 14 00:08:07 2022
+| Host         : DESKTOP-8OP9CVU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    38 |
+|    Minimum number of control sets                        |    38 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     5 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    38 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    36 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |            7 |
+| No           | No                    | Yes                    |              56 |           25 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1029 |          600 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |                                                 Enable Signal                                                | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+--------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | cpu/Execute_module/alu/E[0]                                                                                  | rst_IBUF         |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG |                                                                                                              |                  |                7 |             14 |         2.00 |
+|  clk_IBUF_BUFG |                                                                                                              | rst_IBUF         |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG | cpu/Execute_module/alu/_inferred__0/i__carry_0[0]                                                            | rst_IBUF         |               21 |             32 |         1.52 |
+|  clk_cpu_BUFG  |                                                                                                              | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[29][31]_i_1_n_0                                                               | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[23][31]_i_1_n_0                                                               | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[5][31]_i_1_n_0                                                                | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[12][31]_i_1_n_0                                                               | rst_IBUF         |               22 |             32 |         1.45 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[24][31]_i_1_n_0                                                               | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[14][31]_i_1_n_0                                                               | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[1][31]_i_1_n_0                                                                | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[19][31]_i_1_n_0                                                               | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[21][31]_i_1_n_0                                                               | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[2][31]_i_1_n_0                                                                | rst_IBUF         |               28 |             32 |         1.14 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[30][31]_i_1_n_0                                                               | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[6][31]_i_1_n_0                                                                | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[10][31]_i_1_n_0                                                               | rst_IBUF         |               28 |             32 |         1.14 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[16][31]_i_1_n_0                                                               | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[18][31]_i_1_n_0                                                               | rst_IBUF         |               26 |             32 |         1.23 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[13][31]_i_1_n_0                                                               | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[17][31]_i_1_n_0                                                               | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF                                                                               | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[11][31]_i_1_n_0                                                               | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[15][31]_i_1_n_0                                                               | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[26][31]_i_1_n_0                                                               | rst_IBUF         |               25 |             32 |         1.28 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[27][31]_i_1_n_0                                                               | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[20][31]_i_1_n_0                                                               | rst_IBUF         |               24 |             32 |         1.33 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[28][31]_i_1_n_0                                                               | rst_IBUF         |               23 |             32 |         1.39 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[3][31]_i_1_n_0                                                                | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[7][31]_i_1_n_0                                                                | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[8][31]_i_1_n_0                                                                | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[25][31]_i_1_n_0                                                               | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[9][31]_i_1_n_0                                                                | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[4][31]_i_1_n_0                                                                | rst_IBUF         |               22 |             32 |         1.45 |
+|  clk_cpu_BUFG  | cpu/Decoder_module/Register/RF[22][31]_i_1_n_0                                                               | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG  | cpu/Execute_module/data_mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                  |               32 |            128 |         4.00 |
+|  clk_cpu_BUFG  | cpu/Execute_module/data_mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_31_31_i_1_n_0 |                  |               32 |            128 |         4.00 |
++----------------+--------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

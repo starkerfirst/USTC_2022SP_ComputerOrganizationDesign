@@ -1,0 +1,115 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Wed May 25 20:10:55 2022
+| Host         : DESKTOP-8OP9CVU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file cpu_control_sets_placed.rpt
+| Design       : cpu
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    37 |
+|    Minimum number of control sets                        |    37 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    37 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    35 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |             272 |          100 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               8 |            4 |
+| Yes          | No                    | Yes                    |            1034 |          464 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------------------------------------------------------+-------------------+------------------+----------------+--------------+
+|  Clock Signal  |                                         Enable Signal                                         |  Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-----------------------------------------------------------------------------------------------+-------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                                                               |                   |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | EX/E[0]                                                                                       |                   |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_9[0]                                                                    | ID/Register/AR[0] |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_3[0]                                                                    | ID/Register/AR[0] |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_26[0]                                                                   | ID/Register/AR[0] |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_29[0]                                                                   | ID/Register/AR[0] |               23 |             32 |         1.39 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_25[0]                                                                   | ID/Register/AR[0] |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_7[0]                                                                    | ID/Register/AR[0] |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_5[0]                                                                    | ID/Register/AR[0] |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_22[0]                                                                   | ID/Register/AR[0] |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_8[0]                                                                    | ID/Register/AR[0] |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_23[0]                                                                   | ID/Register/AR[0] |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_20[0]                                                                   | ID/Register/AR[0] |               24 |             32 |         1.33 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_2[0]                                                                    | ID/Register/AR[0] |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_28[0]                                                                   | ID/Register/AR[0] |               21 |             32 |         1.52 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_6[0]                                                                    | ID/Register/AR[0] |               22 |             32 |         1.45 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_21[0]                                                                   | ID/Register/AR[0] |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_4[0]                                                                    | ID/Register/AR[0] |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_27[0]                                                                   | ID/Register/AR[0] |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_24[0]                                                                   | ID/Register/AR[0] |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_10[0]                                                                   | ID/Register/AR[0] |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_11[0]                                                                   | ID/Register/AR[0] |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_12[0]                                                                   | ID/Register/AR[0] |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_14[0]                                                                   | ID/Register/AR[0] |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_13[0]                                                                   | ID/Register/AR[0] |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_0[0]                                                                    | ID/Register/AR[0] |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_1[0]                                                                    | ID/Register/AR[0] |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_15[0]                                                                   | ID/Register/AR[0] |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_16[0]                                                                   | ID/Register/AR[0] |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_19[0]                                                                   | ID/Register/AR[0] |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_18[0]                                                                   | ID/Register/AR[0] |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | MEM/ctrwb_reg_reg[17]_17[0]                                                                   | ID/Register/AR[0] |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | MEM/E[0]                                                                                      | ID/Register/AR[0] |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | ID/p_0_out                                                                                    | ID/Register/AR[0] |               15 |             42 |         2.80 |
+|  clk_IBUF_BUFG | MEM/date_mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                   |               32 |            128 |         4.00 |
+|  clk_IBUF_BUFG | MEM/date_mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                   |               32 |            128 |         4.00 |
+|  clk_IBUF_BUFG |                                                                                               | ID/Register/AR[0] |              100 |            272 |         2.72 |
++----------------+-----------------------------------------------------------------------------------------------+-------------------+------------------+----------------+--------------+
+
+

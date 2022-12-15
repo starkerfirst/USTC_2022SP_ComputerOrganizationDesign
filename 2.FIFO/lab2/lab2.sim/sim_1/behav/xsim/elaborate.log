@@ -1,0 +1,19 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto d5f776e2723e417da69e351b2c4bec8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFOsim_behav xil_defaultlib.FIFOsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.rf(DWidth=4,Awidth=3)
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.SDU
+Compiling module xil_defaultlib.signal_edge
+Compiling module xil_defaultlib.LCU
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFOsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFOsim_behav

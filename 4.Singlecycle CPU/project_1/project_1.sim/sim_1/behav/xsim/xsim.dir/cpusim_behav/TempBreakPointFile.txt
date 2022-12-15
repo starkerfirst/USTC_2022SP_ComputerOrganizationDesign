@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+641,true,"C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sim_1/new/cpusim.v"

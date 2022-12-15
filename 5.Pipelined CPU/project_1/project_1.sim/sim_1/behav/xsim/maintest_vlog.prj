@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.gen/sources_1/ip/data_mem/sim/data_mem.v" \
+"../../../../project_1.gen/sources_1/ip/instruction_mem/sim/instruction_mem.v" \
+"../../../../project_1.srcs/sources_1/new/EX.v" \
+"../../../../project_1.srcs/sources_1/new/ID.v" \
+"../../../../project_1.srcs/sources_1/new/IF.v" \
+"../../../../project_1.srcs/sources_1/new/MEM.v" \
+"../../../../project_1.srcs/sources_1/new/PDU_PL.v" \
+"../../../../project_1.srcs/sources_1/new/WB.v" \
+"../../../../project_1.srcs/sources_1/new/alu.v" \
+"../../../../project_1.srcs/sources_1/new/cpu.v" \
+"../../../../project_1.srcs/sources_1/new/forwarding_stall.v" \
+"../../../../project_1.srcs/sources_1/new/main.v" \
+"../../../../project_1.srcs/sources_1/new/rf.v" \
+"../../../../project_1.srcs/sim_1/new/mainsim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

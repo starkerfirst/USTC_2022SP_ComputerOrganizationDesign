@@ -1,0 +1,340 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12992
+WARNING: [Synth 8-1102] /* in comment [C:/Users/STARKer-first/Desktop/COD/lab1/project_1/project_1.srcs/sources_1/new/alu.v:86]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1135.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Main.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pdu_1cycle' [C:/Users/STARKer-first/Desktop/COD/lab4/pdu_1cycle.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/STARKer-first/Desktop/COD/lab4/pdu_1cycle.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'pdu_1cycle' (1#1) [C:/Users/STARKer-first/Desktop/COD/lab4/pdu_1cycle.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/CPU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Main.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (2#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Main.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Execute' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Execute.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/STARKer-first/Desktop/COD/lab1/project_1/project_1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (4#1) [C:/Users/STARKer-first/Desktop/COD/lab1/project_1/project_1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-638] synthesizing module 'data_mem' [c:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.gen/sources_1/ip/data_mem/synth/data_mem.vhd:71]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 256 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 1 - type: integer 
+	Parameter C_HAS_DPRA bound to: 1 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: data_mem.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'c:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.gen/sources_1/ip/data_mem/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [c:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.gen/sources_1/ip/data_mem/synth/data_mem.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'data_mem' (8#1) [c:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.gen/sources_1/ip/data_mem/synth/data_mem.vhd:71]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Main.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (9#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Main.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'Execute' (10#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Execute.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_mem' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.runs/synth_1/.Xil/Vivado-20648-DESKTOP-8OP9CVU/realtime/instruction_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_mem' (11#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.runs/synth_1/.Xil/Vivado-20648-DESKTOP-8OP9CVU/realtime/instruction_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rf' [C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sources_1/new/rf.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rf' (12#1) [C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sources_1/new/rf.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Decoder.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (13#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Decoder.v:94]
+INFO: [Synth 8-6157] synthesizing module 'ALUctr' [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Decoder.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'ALUctr' (14#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Decoder.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (15#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (16#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/CPU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'main' (17#1) [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Main.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1135.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1135.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1135.105 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.gen/sources_1/ip/instruction_mem/instruction_mem/instruction_mem_in_context.xdc] for cell 'cpu/Decoder_module/instruction_mem'
+Finished Parsing XDC File [c:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.gen/sources_1/ip/instruction_mem/instruction_mem/instruction_mem_in_context.xdc] for cell 'cpu/Decoder_module/instruction_mem'
+Parsing XDC File [C:/Users/STARKer-first/Desktop/COD/fpgaol1.xdc]
+Finished Parsing XDC File [C:/Users/STARKer-first/Desktop/COD/fpgaol1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/STARKer-first/Desktop/COD/fpgaol1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1149.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1149.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1149.398 ; gain = 14.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1149.398 ; gain = 14.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for cpu/Decoder_module/instruction_mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cpu/Execute_module/data_mem. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1149.398 ; gain = 14.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1149.398 ; gain = 14.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 36    
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 8     
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	  10 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 39    
+	   4 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1149.398 ; gain = 14.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name                      | RTL Object                                                | Inference | Size (Depth x Width) | Primitives      | 
++---------------------------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+|\cpu/Execute_module/data_mem /U0 | synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg | Implied   | 256 x 32             | RAM128X1D x 64  | 
++---------------------------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1149.398 ; gain = 14.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1149.398 ; gain = 14.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------------------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name                      | RTL Object                                                | Inference | Size (Depth x Width) | Primitives      | 
++---------------------------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+|\cpu/Execute_module/data_mem /U0 | synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg | Implied   | 256 x 32             | RAM128X1D x 64  | 
++---------------------------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1149.398 ; gain = 14.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1159.398 ; gain = 24.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1159.398 ; gain = 24.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1159.398 ; gain = 24.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1159.398 ; gain = 24.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1159.398 ; gain = 24.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1159.398 ; gain = 24.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |instruction_mem |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |instruction_mem |     1|
+|2     |BUFG            |     2|
+|3     |CARRY4          |    29|
+|4     |LUT1            |     4|
+|5     |LUT2            |     9|
+|6     |LUT3            |    43|
+|7     |LUT4            |    42|
+|8     |LUT5            |    93|
+|9     |LUT6            |  1057|
+|10    |MUXF7           |   252|
+|11    |MUXF8           |     9|
+|12    |RAM128X1D       |    64|
+|13    |FDCE            |  1064|
+|14    |FDPE            |    21|
+|15    |FDRE            |    78|
+|16    |IBUF            |    10|
+|17    |OBUF            |    15|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1159.398 ; gain = 24.293
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:11 ; elapsed = 00:01:24 . Memory (MB): peak = 1159.398 ; gain = 10.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1159.398 ; gain = 24.293
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1171.523 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 354 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'main' is not ideal for floorplanning, since the cellview 'rf' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1177.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 64 instances
+
+Synth Design complete, checksum: 553584ac
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:38 . Memory (MB): peak = 1177.320 ; gain = 42.215
+INFO: [Common 17-1381] The checkpoint 'C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 14 00:06:51 2022...

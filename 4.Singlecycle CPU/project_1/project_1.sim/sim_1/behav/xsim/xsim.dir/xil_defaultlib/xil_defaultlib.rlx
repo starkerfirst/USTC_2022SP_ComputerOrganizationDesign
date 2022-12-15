@@ -1,0 +1,17 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/STARKer-first/Desktop/COD/lab1/project_1/project_1.srcs/sources_1/new/alu.v,1649559020,verilog,,C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sources_1/new/rf.v,,alu,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sources_1/new/rf.v,1649849423,verilog,,C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sim_1/new/cpusim.v,,rf,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/pdu_1cycle.v,1649130625,verilog,,C:/Users/STARKer-first/Desktop/COD/lab2/lab2/lab2.srcs/sources_1/new/rf.v,,pdu_1cycle,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.gen/sources_1/ip/data_mem/sim/data_mem.v,1649332864,verilog,,C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/CPU.v,,data_mem,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.gen/sources_1/ip/instruction_mem/sim/instruction_mem.v,1649860884,verilog,,C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.gen/sources_1/ip/data_mem/sim/data_mem.v,,instruction_mem,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sim_1/new/cpusim.v,1649848341,verilog,,,,cpusim,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sim_1/new/mainsim.v,1649589034,verilog,,,,mainsim,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/CPU.v,1649865865,verilog,,C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Decoder.v,,cpu,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Decoder.v,1649853368,verilog,,C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Execute.v,,ALUctr;Decoder;ImmGen,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Execute.v,1649557063,verilog,,C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Main.v,,Execute,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/Main.v,1649504399,verilog,,C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/PC.v,,main;mux2;mux3,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sources_1/new/PC.v,1649573322,verilog,,C:/Users/STARKer-first/Desktop/COD/lab1/project_1/project_1.srcs/sources_1/new/alu.v,,PC,,,,,,,,

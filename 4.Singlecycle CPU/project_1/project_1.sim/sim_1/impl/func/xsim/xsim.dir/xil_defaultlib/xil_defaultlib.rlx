@@ -1,0 +1,6 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.sim/sim_1/impl/func/xsim/mainsim_func_impl.v,1649594274,verilog,,C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sim_1/new/mainsim.v,,Decoder;Execute;PC;alu;cpu;data_mem;dist_mem_gen_v8_0_13;dist_mem_gen_v8_0_13_synth;dpram;glbl;instruction_mem;instruction_mem_dist_mem_gen_v8_0_13;instruction_mem_dist_mem_gen_v8_0_13_synth;instruction_mem_rom;main;pdu_1cycle;rf,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sim_1/new/mainsim.v,1649589034,verilog,,,,mainsim,,,,,,,,

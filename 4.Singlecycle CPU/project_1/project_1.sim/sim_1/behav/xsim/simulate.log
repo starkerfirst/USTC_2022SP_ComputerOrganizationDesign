@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file data_mem.mif
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Stopped at time : 6060 ns : File "C:/Users/STARKer-first/Desktop/COD/lab4/project_1/project_1.srcs/sim_1/new/cpusim.v" Line 641

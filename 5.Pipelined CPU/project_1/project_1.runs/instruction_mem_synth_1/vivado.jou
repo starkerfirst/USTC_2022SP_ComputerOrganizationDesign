@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat May  7 17:02:21 2022
+# Process ID: 18516
+# Current directory: C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.runs/instruction_mem_synth_1
+# Command line: vivado.exe -log instruction_mem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source instruction_mem.tcl
+# Log file: C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.runs/instruction_mem_synth_1/instruction_mem.vds
+# Journal file: C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.runs/instruction_mem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source instruction_mem.tcl -notrace

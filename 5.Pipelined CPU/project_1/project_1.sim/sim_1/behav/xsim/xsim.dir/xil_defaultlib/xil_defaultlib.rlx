@@ -1,0 +1,20 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.gen/sources_1/ip/data_mem/sim/data_mem.v,1651065007,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.gen/sources_1/ip/instruction_mem/sim/instruction_mem.v,,data_mem,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.gen/sources_1/ip/instruction_mem/sim/instruction_mem.v,1651914137,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/EX.v,,instruction_mem,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sim_1/new/mainsim.v,1651932032,verilog,,,,maintest,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sim_1/new/no_hazard_test.v,1651926293,verilog,,,,no_hazard_test,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/EX.v,1651926915,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/ID.v,,EX,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/ID.v,1651933992,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/IF.v,,ID;ImmGen,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/IF.v,1651762044,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/MEM.v,,IF,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/MEM.v,1651913573,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/PDU_PL.v,,MEM,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/PDU_PL.v,1651063601,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/WB.v,,pdu,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/WB.v,1651744632,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/alu.v,,WB,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/alu.v,1651744296,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/cpu.v,,alu,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/cpu.v,1651927211,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/forwarding_stall.v,,cpu,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/forwarding_stall.v,1651906830,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/main.v,,forward;hazard,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/main.v,1651744274,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/rf.v,,main;mux2;mux3,,,,,,,,
+C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sources_1/new/rf.v,1651066037,verilog,,C:/Users/STARKer-first/Desktop/COD/lab5/project_1/project_1.srcs/sim_1/new/mainsim.v,,rf,,,,,,,,
